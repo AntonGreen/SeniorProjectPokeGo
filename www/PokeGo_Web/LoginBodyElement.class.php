@@ -31,7 +31,7 @@ class LoginBodyElement extends Element
 		$this->skipLines(2);
 		echo "<input type='submit' name='login' value='login'>";
 		$this->skipLines(2);
-		echo "<input type='submit' name='Create New User' value='createNewUser'>";
+		echo "<input type='submit' name='createNewUser' value='Create New User'>";
 	}
 
 	//silly little for loop to skip lines with a parameter 

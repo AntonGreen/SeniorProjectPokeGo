@@ -1,7 +1,6 @@
 <?php
 /*
-	Class: LoginController
-	Purpose : creates elements for Login View
+	Class: CreateNewUserController
 
 	By: Antonio Garcia
 	Date : Oct 23 2014
@@ -10,12 +9,12 @@
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
-require_once("LoginModel.class.php");
+require_once("CreateNewUserModel.class.php");
 require_once("HTMLView.class.php");
 require_once("FormElement.class.php");
 require_once("CreateNewUserBodyElement.class.php");
 
-	$myModel = new LoginModel();
+	$myModel = new CreateNewUserModel();
 	$myModel->setData($_POST);
 
 	$myModel->process();

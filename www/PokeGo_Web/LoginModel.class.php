@@ -31,14 +31,15 @@ class LoginModel extends Model
 		// check for name being passed in
 		if(isset($this->inData['login']))
 		{
-             $this->myUserName = $this->inData['myUserName'];
-             $this->myPassword = $this->inData['myPassword'];
+             header("location:CreateNewUserController.php");
+            //  $this->myUserName = $this->inData['myUserName'];
+            //  $this->myPassword = $this->inData['myPassword'];
 
-             $_SESSION['myPassword'] = $this->inData['myPassword'];
-             $_SESSION['myUserName'] = $this->inData['myUserName'];
+            //  $_SESSION['myPassword'] = $this->inData['myPassword'];
+            //  $_SESSION['myUserName'] = $this->inData['myUserName'];
          
-            $this->outData['myPassword'] = $_SESSION['myPassword'];
-            $this->outData['myUserName'] = $_SESSION['myUserName'];
+            // $this->outData['myPassword'] = $_SESSION['myPassword'];
+            // $this->outData['myUserName'] = $_SESSION['myUserName'];
 
             //$this->setGUILocation($mysql);
 	
